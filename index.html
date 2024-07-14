@@ -17,28 +17,53 @@
             height: 100vh;
             text-align: center;
         }
-        h1 {
-            font-family: 'Tesla', sans-serif;
-            font-size: 3em;
-            color: #FFD700;
-        }
-        h2 {
-            font-family: 'Tesla', sans-serif;
-            font-size: 2em;
-            color: #FFD700;
-        }
-        p {
-            font-size: 1.2em;
-        }
         .container {
             border: 2px solid #FFD700;
             padding: 20px;
             border-radius: 10px;
             background-color: rgba(0, 0, 0, 0.8);
+            max-width: 800px;
+            width: 100%;
+        }
+        h1 {
+            font-family: 'Russo One', sans-serif;
+            font-size: 3em;
+            color: #FFD700;
+            margin-bottom: 0.5em;
+        }
+        h2 {
+            font-family: 'Russo One', sans-serif;
+            font-size: 2em;
+            color: #FFD700;
+            margin-top: 0;
+        }
+        p {
+            font-size: 1.2em;
+            margin: 1em 0;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 1em;
+            color: #000;
+            background-color: #FFD700;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .btn:hover {
+            background-color: #e5c700;
+            color: #000;
+        }
+        .btn:active {
+            background-color: #bfa600;
         }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Russo+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
@@ -47,6 +72,9 @@
         <p>Welcome to my personal webpage!</p>
         <p>I'm an average student at SCTS, born on May 22, 2011.</p>
         <p>Currently, I am working on an exciting project: making a drone!</p>
+        <a href="#" class="btn">Learn More</a>
+        <a href="https://github.com/" class="btn">My GitHub</a>
+        <a href="mailto:your-email@example.com" class="btn">Contact Me</a>
     </div>
 </body>
 </html>
